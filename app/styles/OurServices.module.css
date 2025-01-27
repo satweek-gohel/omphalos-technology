@@ -1,0 +1,74 @@
+.ourServicesSection {
+    padding: 100px 20px; /* Padding for the section */
+    background-color: var(--background-color); /* Background color */
+  }
+  
+  .heading1 {
+    color: var(--primary-color);
+    font-size: 1.5rem; /* Font size for main heading */
+    font-weight: 500;
+  }
+  
+  .heading2 {
+    color: var(--text-color);
+    font-size: 2rem; /* Font size for subtitle */
+    margin-top: 20px;
+    margin-bottom: 40px; /* Space below subtitle */
+    text-decoration: underline var(--primary-color);
+    text-underline-offset: 10px;
+  }
+  
+  .card {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the card */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Transition effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .icon {
+    font-size: 2.5rem; /* Size for the icons */
+    color: var(--primary-color); /* Icon color */
+    margin-bottom: 15px; /* Space between icon and title */
+  }
+  
+  .cardTitle {
+    color: var(--text-color); /* Title color */
+    font-size: 1.25rem; /* Font size for title */
+    margin-bottom: 10px; /* Space below title */
+  }
+  
+  .cardDescription {
+    color: var(--text-color); /* Description color */
+    font-size: 1rem; /* Font size for description */
+    line-height: 1.5rem; /* Line height for description */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading1 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+  
+    .heading2 {
+      font-size: 1.25rem; /* Smaller font size for mobile */
+    }
+  
+    .icon {
+      font-size: 2rem; /* Smaller icon size for mobile */
+    }
+  
+    .cardTitle {
+      font-size: 1rem; /* Smaller font size for title on mobile */
+    }
+  
+    .cardDescription {
+      font-size: 0.9rem; /* Smaller font size for description on mobile */
+    }
+  }
+  

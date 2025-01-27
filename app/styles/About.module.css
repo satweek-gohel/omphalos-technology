@@ -1,0 +1,113 @@
+/* styles/About.module.css */
+.aboutSection {
+    padding: 60px 0;
+    background-color: #fff; /* Light background color */
+}
+
+.leftImage {
+    max-width: 70%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.overlayCard {
+    position: absolute; /* Ensure the card is positioned absolutely */
+    top: 40%; /* Adjust vertical position */
+    left: 60%; /* Adjust horizontal position */
+    width: 200px; /* Fixed width of the card */
+    height: 200px; /* Fixed height of the card */
+    z-index: 1; /* Ensure the card is above the image */
+    border: 7px solid white; /* White border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.hiddenImage {
+    position: absolute; /* Ensure the hidden image is positioned absolutely */
+    top: 72%; /* Adjust vertical position */
+    left: 20%; /* Adjust horizontal position */
+    max-width: 60%; /* Limit width */
+    height: 300px; /* Fixed height */
+    border: 7px solid white; /* White border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Icon styles */
+.icon {
+    color: var(--primary-color);
+    font-size:4rem; /* Adjust icon size */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+/* Heading and description styles */
+.heading {
+    color: var(--text-color) !important; /* Heading color */
+}
+
+.description {
+    color: var(--text-color) !important; /* Description color */
+}
+
+.heading2 {
+    color: var(--text-color) !important; /* Heading color */
+}
+
+.description2 {
+    color: var(--text-color) !important; /* Description color */
+    line-height: 1.5rem;
+}
+.iconItem{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 40px 0; /* Adjust padding for mobile and tablet */
+    }
+
+    .leftImage {
+        max-width: 100%; /* Ensure image takes full width on mobile and tablet */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Adjust border radius for mobile and tablet */
+    }
+
+    .overlayCard {
+        display: none; /* Hide the overlay card on mobile */
+    }
+
+    .hiddenImage {
+        display: none; /* Hide the hidden image on mobile */
+    }
+
+    /* Additional styles for icon list on mobile */
+    .iconItem {
+        display: block; /* Use flexbox for layout */
+        align-items: center; /* Center icon and text vertically */
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    .textContainer {
+        flex-grow: 1; /* Allow text container to grow */
+    }
+
+    .heading2{
+        margin-top: 20px;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+
+    .description2{
+        font-size: 0.9rem;
+        margin-top: 20px;
+        line-height: 2.2rem;
+    }
+
+    .icon{
+        margin-bottom: 20px;
+    }
+   .heading{
+    margin-bottom: 20px;
+   }
+}

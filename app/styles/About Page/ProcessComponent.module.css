@@ -1,0 +1,82 @@
+.processSection {
+    padding: 60px 0;
+    background-color: white;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  .subtitle {
+    font-size: 2.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .processCard {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    outline: rgb(227, 221, 221);
+    border-radius: 0px;
+    text-align: left;
+    min-height: 100px;
+    height: 100%;
+  }
+  
+  .processCard:hover {
+    border: 2px solid var(--primary-color);
+    transform: translateY(-10px);
+  }
+  
+  .iconBox {
+    position: relative;
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+  
+  .stepNumber {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.05); /* Light shadow effect */
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: -1; /* Number behind the icon */
+  }
+  
+  /* .processCard .card-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  } */
+  
+  .processCard .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .line{
+    border-bottom: var(--primary-color) 3px solid;
+    width: 10%;
+  }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 1.2rem;
+    }
+    
+    .subtitle {
+      font-size: 2.2rem;
+    }
+  
+    .stepNumber {
+      font-size: 4rem;
+    }
+  }
+  

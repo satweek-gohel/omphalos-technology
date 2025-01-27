@@ -1,0 +1,109 @@
+.consultationSection {
+    padding: 40px 20px 80px 20px; /* Padding for the section */
+    background-color: var(--background-color); /* Background color */
+  }
+  
+  .heading1 {
+    color: var(--primary-color);
+    margin-bottom: 10px; /* Space below heading */
+    font-size: 1.5rem; /* Adjusted font size */
+  }
+  
+  .heading2 {
+    color: var(--text-color);
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2rem; /* Larger font size */
+    font-weight: 600;
+    line-height: 3rem;
+  }
+  
+  .description {
+    color: var(--text-color);
+    margin-bottom: 30px; /* Space below description */
+    line-height: 1.6rem;
+  }
+  
+  .pointContainer {
+    margin: 20px 0; /* Space around points */
+  }
+  
+  .point {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center icon and text vertically */
+    margin-bottom: 20px; /* Space between points */
+  }
+  
+  .icon {
+    font-size: 1.5rem; /* Icon size */
+    color: var(--primary-color); /* Primary color for icons */
+    margin-right: 10px; /* Space between icon and text */
+
+  }
+  
+  .pointText {
+    color: var(--text-color); /* Text color for point text */
+    font-weight: 500;
+  }
+  
+  .consultButton {
+    background-color: var(--primary-color); /* Primary color for button */
+    color: white; /* White text for button */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px 25px; /* Padding for button */
+    font-weight: 600;
+  }
+  .imageContainer {
+    position: relative; /* Position relative for absolute children */
+    height: 400px;
+    width: 400px;
+  }
+
+  .imageContainer img{
+    border-radius: 15px;
+  }
+  
+  .projectCount {
+    position: absolute; /* Position absolutely within container */
+    bottom: -10%; /* Position it at the bottom */
+    left: -2%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the element */
+    background: white; /* White background for text box */
+    padding: 50px 20px; /* Padding for text box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    font-size: 1.25rem; /* Font size for project count */
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading1 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      text-align: left;
+    }
+  
+    .heading2 {
+      font-size: 1.75rem;
+      text-align: left; /* Smaller font size for mobile */
+    }
+  
+    .description {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      text-align: left; /* Reduced line-height for mobile */
+    }
+  
+    .projectCount {
+      display: none;
+    }
+
+    .consultButton{
+        margin-bottom: 20px;
+    }
+
+    .consultationSection{
+      padding: 20px;
+    }
+  }
+  

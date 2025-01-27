@@ -1,0 +1,49 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+/* globals.css */
+:root {
+  --primary-color: #FF6F61; /* A bold coral shade for a modern and vibrant look */
+  --secondary-color: #FFFFFF; /* White for clean contrast */
+  --background-color: #FAF3F0; /* A soft, warm beige for a professional and welcoming feel */
+  --text-color: #222222; /* Dark charcoal for smooth readability */
+}
+
+body {
+  color: var(--secondary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.experience-text-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+}
+
+.navbar{
+  position: sticky;
+}
+
+.slick-dots li button:before {
+  font-size: 0.8rem !important; /* Increase the size of the dots */
+}
+
+.slick-dots li button:hover:before {
+  color: var(--primary-color) !important; /* Change color on hover to primary color */
+}
+
+.slick-dots li.slick-active button:before {
+  color:var(--primary-color) !important;
+}
+

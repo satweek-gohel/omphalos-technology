@@ -1,0 +1,6 @@
+export const OVERVIEW = 'Overview'
+export const BENIFITS = 'Benefits'
+export const SERVICES = 'Services'
+export const EXPERTISE = 'Expertise'
+export const METHODOLOGY = 'Methodology'
+export const CONTACT_US = 'Contact Us'

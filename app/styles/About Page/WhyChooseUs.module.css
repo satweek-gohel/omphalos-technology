@@ -1,0 +1,150 @@
+.whyChooseUs {
+  position: relative;
+  background-image: url('/about-banner.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent overflow */
+  margin-bottom: 0px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: white;
+  font-weight: 500;
+}
+
+.cardWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.customCard {
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: left;
+  padding: 30px;
+  height: 80%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.customCard:hover {
+  transform: translateY(-10px);
+}
+
+.phoneContainer, .solutionContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.phoneIcon {
+  font-size: 60px;
+  color: white;
+  margin-right: 15px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.solutionIcon {
+  font-size: 100px;
+  color: var(--primary-color);
+  margin-right: 15px;
+  
+}
+.startNow:hover {
+  text-decoration: underline var(--primary-color);
+  cursor: pointer;
+  text-underline-offset: 20px;
+
+  
+}
+
+.startNow{
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
+.chead{
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .whyChooseUs {
+      height: auto;
+      margin-bottom: 00px;
+  }
+  .cardWrapper {
+      margin-bottom: px;
+  }
+  .customCard {
+      height: auto;
+  }
+  .title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .title{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .whyChooseUs {
+      margin-bottom: 00px;
+  }
+  .cardWrapper {
+      padding-bottom: 80px;
+  }
+  .phoneIcon{
+      font-size: 30px;
+  }
+  .customCard{
+    padding: 20;
+  }
+  .solutionIcon{
+    font-size: 200px;
+  }
+  .chead {
+      font-size: 1rem;
+  }
+  .cdes {
+      font-size: 0.85rem;
+    
+  }
+
+  .startNow{
+    margin-left: 60px;
+  }
+}

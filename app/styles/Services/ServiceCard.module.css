@@ -1,0 +1,107 @@
+/* ServiceCard.module.css */
+
+
+
+.serviceSection {
+    padding: 60px 0;
+    background-color: var(--background-color);
+}
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+}
+
+.cardBody {
+    padding: 30px;
+    z-index: 2;
+}
+
+.cardTitle {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    color: var(--text-color); /* Use primary color for title */
+    margin-bottom: 1.5rem;
+    margin-top: 0px;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.numberLabel{
+    font-size: 48px;
+  color: white !important;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1px var(--primary-color); /* For WebKit browsers like Chrome, Safari */
+  
+}
+
+.readMore {
+    background-color: transparent;
+    border: 2px solid lightgrey;
+    color: var(--primary-color); /* Use primary color for text */
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    z-index: 2; /* Ensure button text is above the background */
+    font-weight: 600;
+}
+
+
+.card:hover .readMore {
+    background-color: var(--primary-color); /* Change to primary color on hover */
+    color: white; /* Change text color to white */
+    border-color: transparent; /* Make border transparent on hover */
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect on hover */
+}
+
+.icon{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    .serviceSection {
+        padding: 40px 0;
+    }
+
+    .sectionTitle {
+        font-size: 2rem;
+    }
+
+    .sectionDescription {
+        font-size: 1rem;
+    }
+
+    .cardBody {
+        padding: 20px;
+    }
+
+    .cardTitle {
+        font-size: 1.3rem;
+    }
+
+    .cardDescription {
+        font-size: 0.9rem;
+    }
+
+    .readMore {
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,94 @@
+
+.footer {
+    background-color: #f05243de; /* Dark blue background */
+    color: white; /* Text color */
+    position: relative; /* For the SVG overlay */
+    padding-top: 30px;
+    padding-bottom: 5px;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.footer::before {
+    content: '';
+    position: absolute; /* Positioning for background image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/map.svg') no-repeat center center; /* SVG Background */
+    background-size: contain; /* Cover the entire area */
+    z-index: 0; /* Behind content */
+    opacity: 0.1; /* Adjust opacity for better visibility of text */
+}
+
+.overlay {
+    position: relative; /* Ensure content is above the background */
+    z-index: 1; /* Bring content above the SVG */
+}
+
+.link {
+    text-decoration: none !important;
+    color: white;
+    font-weight: 500;
+}
+
+.head {
+    color: white;
+    font-weight: 600;
+}
+
+.subhead {
+    color:white;
+    /* margin-top: 10px; */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet View (768px - 992px) */
+@media (max-width: 992px) and (min-width: 768px) {
+    .footer {
+        padding: 30px 0; /* Reduce padding for tablets */
+    }
+
+    .head {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .subhead {
+        font-size: 1rem; /* Adjust subheading size */
+        margin-top: 5px; /* Reduce margin on smaller screens */
+    }
+
+    .link {
+        font-size: 0.9rem; /* Slightly reduce link font size */
+    }
+    .foot {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Mobile View (max-width: 767px) */
+@media (max-width: 767px) {
+    .footer {
+        padding: 20px 0; /* Further reduce padding for mobile */
+    }
+
+    .head {
+        font-size: 1rem; /* Smaller heading size for mobile */
+    }
+
+    .subhead {
+        font-size: 0.8rem; /* Smaller subheading size for mobile */
+        margin-top: 5px; /* Further reduce margin */
+    }
+
+    .link {
+        font-size: 0.8rem; /* Reduce link font size for better visibility */
+    }
+
+    .foot {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}

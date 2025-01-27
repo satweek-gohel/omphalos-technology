@@ -1,0 +1,104 @@
+/* styles/HeroSection.module.css */
+.heroSection {
+    margin-top: 80px;
+    padding: 50px 10px;
+    background-color: white; 
+    z-index: 0 !important;
+  }
+  
+  .title {
+    font-size: 1.2rem; 
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .heading {
+    font-size: 3rem; 
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+
+  .heading2{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 3rem; 
+    margin-bottom: 15px;
+
+
+  }
+  
+  .description {
+    font-size: 1rem; 
+    margin-bottom: 30px;
+    color: var(--text-color);
+  }
+  
+  .heroImage {
+    max-width: 100%; 
+    height: auto; 
+    z-index: 0;
+  }
+   
+  /* Media Queries for Mobile and Tablet */
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 30px 0; /* Adjust padding for mobile and tablet */
+    }
+
+    .title {
+      font-size: 0.5rem; /* Smaller font size for mobile and tablet */
+      margin-bottom: 15px;
+    }
+
+    .heading{
+        font-size: 0rem;
+    }
+
+    .heading2 {
+      font-size: 2.5rem; /* Smaller font size for mobile and tablet */
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 0.875rem; /* Smaller font size for mobile and tablet */
+      margin-bottom: 20px;
+    }
+
+    .heroImage {
+      width: 100%; /* Ensure image takes full width on mobile and tablet */
+      height: auto;
+      margin-top: 30px; /* Maintain aspect ratio */
+    }
+  }
+
+  /* Media Queries for Tablet */
+  @media (max-width: 768px) {
+    .heroSection {
+      padding: 40px 50px; /* Adjust padding for tablet */
+    }
+
+    .title {
+      font-size: 0.8rem; /* Adjust font size for tablet */
+      margin-bottom: 18px;
+    }
+
+    .heading{
+        font-size: 1.3rem;
+    }
+
+    .heading2 {
+      font-size: 2rem; /* Adjust font size for tablet */
+      margin-bottom: 12px;
+    }
+
+    .description {
+      font-size: 0.8rem; /* Adjust font size for tablet */
+      margin-bottom: 25px;
+    }
+
+    .heroImage {
+      width: 100%; /* Ensure image takes full width on tablet */
+      height: auto;
+      margin-top: 25px; /* Maintain aspect ratio */
+    }
+  }

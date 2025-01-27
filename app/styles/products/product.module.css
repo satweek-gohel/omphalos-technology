@@ -1,0 +1,166 @@
+/* product.module.css */
+
+.banner {
+    background-color:  #eb695ddd ; /* Primary color background */
+    color: white !important;
+    padding: 30px;
+    text-align: center;
+    margin: 60px 0 30px 0; 
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.banner h1 {
+    margin: 0;
+    color: white; /* Remove default margin */
+}
+
+.image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.description {
+    font-size: 1.1rem; /* Slightly larger font size for description */
+    line-height: 1.4; 
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.menu {
+    background-color: #f8f9fa; /* Light background for the menu */
+    padding: 5px 20px; /* Padding around the menu */
+    border-radius: 8px; /* Rounded corners for the menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the menu */
+
+    
+}
+
+.menu h3 {
+    margin-bottom: 15px; /* Space below the menu title */
+}
+
+.menu ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.menu li {
+    margin: 10px 0;
+    background-color: #f0f0f3;
+    padding: 20px; /* Space between menu items */
+    border-radius: 10px;
+}
+
+.menu li:hover {
+    background-color: var(--primary-color);
+}
+
+.menu li:hover a {
+    color: white; /* Change link color to white on hover */
+}
+
+.menu a {
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s;
+    font-weight: 600;
+    font-size: 1.05rem;
+    
+}
+
+
+
+.goicon{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-family: 600;
+}
+
+.menu li:hover .goicon{
+    color: white !important;
+}
+
+.featureItem{
+    color: var(--text-color);
+    list-style: none;
+    font-weight: 500;
+    line-height: 2.0rem;
+}
+
+.type{
+    color: var(--text-color);
+    list-style: none;
+    font-weight: 500;
+    line-height: 1rem;
+    font-size: 1.3rem;
+}
+
+.checkIcon{
+    padding-left: 0px;
+    margin-right: 20px;
+}
+
+.heading2{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.features{
+    list-style: none;
+}
+/* Smaller mobile screens (up to 480px) */
+@media (max-width: 480px) {
+    .banner {
+        height: 15vh; /* Further reduce banner height */
+        padding: 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.2rem; /* Further reduce heading size */
+    }
+
+    .heading {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    .description {
+        font-size: 0.95rem; /* Smaller description text */
+    }
+
+    .menu li {
+        padding: 10px; /* Even smaller padding for menu items */
+    }
+
+    .menu a {
+        font-size: 0.95rem; /* Reduce font size of links */
+    }
+
+    .goicon {
+        font-size: 1.1rem; /* Further reduce icon size */
+    }
+
+    .featureItem, .type {
+        font-size: 1rem; /* Reduce font size for feature items */
+        line-height: 1.8rem;
+    }
+
+    .heading2 {
+        font-size: 1rem; /* Reduce sub-heading font size */
+    }
+}

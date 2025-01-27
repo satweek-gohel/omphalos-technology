@@ -1,0 +1,89 @@
+.title {
+  color: var(--text-color);
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.tabcontitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.tabconsubtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-left: 20px;
+}
+
+.formLabel {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.customTabs {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1.3rem;
+  color: var(--text-color) !important;
+  font-weight: 600;
+  outline: none;
+}
+
+.customTabs .nav-link {
+  font-size: 18px;
+  color: black !important;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.customTabs .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.activeTab {
+  border-bottom: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.tabContentLine {
+  height: 1px;
+  background-color: lightgrey;
+  margin-top: 10px;
+}
+
+.icon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+
+.error-message {
+  font-size: 0.9rem; 
+  color: #dc3545;  
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .customTabs {
+    font-size: 1rem;
+  }
+}

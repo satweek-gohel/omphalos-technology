@@ -1,0 +1,39 @@
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .carouselContainer {
+    max-width: 100%;
+  }
+  
+  .carouselItem {
+    padding: 10px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logoImage {
+    max-width: 120px;
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .logoImage:hover {
+    filter: grayscale(0%);
+  }
+  
+  @media (max-width: 576px) {
+    .logoImage {
+      max-width: 80px;
+    }
+  }
+  
