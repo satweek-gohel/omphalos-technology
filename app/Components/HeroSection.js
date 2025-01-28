@@ -36,7 +36,7 @@ const HeroSection = () => {
           </Col>
           <Col md={6} className="text-center" data-aos="fade-left" style={{zIndex:1}}>
             <Image
-              src="/hero-banner.jpg" 
+              src="/hero-banner.svg" 
               alt="Hero Image"
               width={500}
               height={500}

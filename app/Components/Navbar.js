@@ -85,10 +85,10 @@ export default function CustomNavbar() {
         <Container style={{ zIndex: "999 !important" }}>
           <Navbar.Brand href="/">
             <Image
-              src="/logo.webp"
+              src="/logo.svg"
               alt="Logo"
-              width={200}
-              height={60}
+              width={80}
+              height={80}
               priority
               style={{ objectFit: "fill" }}
             />

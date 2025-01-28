@@ -81,7 +81,7 @@ export default function CustomNavbar2() {
           {/* Center - Logo */}
           <Navbar.Brand href="/" className="m-0 mx-auto">
             <Image 
-              src="/logo.webp" 
+              src="/logo.svg" 
               alt="Logo" 
               width={120} 
               height={60} 

@@ -47,7 +47,7 @@ const ConsultationSection = () => {
               </div>
             </div>
             <Link href="/contact" passHref legacyBehavior>
-            <Button className={styles.consultButton}>Get a Consultation</Button>
+            <Button className={styles.consultButton} style={{border:'1px solid var(--primary-color)'}}>Get a Consultation</Button>
             </Link>
           </Col>
 

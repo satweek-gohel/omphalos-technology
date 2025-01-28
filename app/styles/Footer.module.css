@@ -1,29 +1,29 @@
 
 .footer {
-    background-color: #f05243de; /* Dark blue background */
-    color: white; /* Text color */
-    position: relative; /* For the SVG overlay */
+    background-color: #c78f3bcc; 
+    color: white; 
+    position: relative; 
     padding-top: 30px;
     padding-bottom: 5px;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
 }
 
 .footer::before {
     content: '';
-    position: absolute; /* Positioning for background image */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/map.svg') no-repeat center center; /* SVG Background */
-    background-size: contain; /* Cover the entire area */
-    z-index: 0; /* Behind content */
-    opacity: 0.1; /* Adjust opacity for better visibility of text */
+    background: url('/map.svg') no-repeat center center; 
+    background-size: contain; 
+    z-index: 0; 
+    opacity: 0.1; 
 }
 
 .overlay {
-    position: relative; /* Ensure content is above the background */
-    z-index: 1; /* Bring content above the SVG */
+    position: relative;
+    z-index: 1; 
 }
 
 .link {
@@ -39,28 +39,25 @@
 
 .subhead {
     color:white;
-    /* margin-top: 10px; */
 }
 
-/* Media Queries for Responsiveness */
 
-/* Tablet View (768px - 992px) */
 @media (max-width: 992px) and (min-width: 768px) {
     .footer {
-        padding: 30px 0; /* Reduce padding for tablets */
+        padding: 30px 0;
     }
 
     .head {
-        font-size: 1.2rem; /* Adjust heading size */
+        font-size: 1.2rem; 
     }
 
     .subhead {
-        font-size: 1rem; /* Adjust subheading size */
-        margin-top: 5px; /* Reduce margin on smaller screens */
+        font-size: 1rem; 
+        margin-top: 5px; 
     }
 
     .link {
-        font-size: 0.9rem; /* Slightly reduce link font size */
+        font-size: 0.9rem; 
     }
     .foot {
         font-size: 0.8rem;
@@ -68,23 +65,23 @@
 
 }
 
-/* Mobile View (max-width: 767px) */
+
 @media (max-width: 767px) {
     .footer {
-        padding: 20px 0; /* Further reduce padding for mobile */
+        padding: 20px 0; 
     }
 
     .head {
-        font-size: 1rem; /* Smaller heading size for mobile */
+        font-size: 1rem; 
     }
 
     .subhead {
-        font-size: 0.8rem; /* Smaller subheading size for mobile */
-        margin-top: 5px; /* Further reduce margin */
+        font-size: 0.8rem;
+        margin-top: 5px;
     }
 
     .link {
-        font-size: 0.8rem; /* Reduce link font size for better visibility */
+        font-size: 0.8rem; 
     }
 
     .foot {

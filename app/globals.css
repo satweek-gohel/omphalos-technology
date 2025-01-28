@@ -2,9 +2,9 @@
 @import '~slick-carousel/slick/slick-theme.css';
 /* globals.css */
 :root {
-  --primary-color: #FF6F61; /* A bold coral shade for a modern and vibrant look */
+  --primary-color: #C78F3B; /* A bold coral shade for a modern and vibrant look */
   --secondary-color: #FFFFFF; /* White for clean contrast */
-  --background-color: #FAF3F0; /* A soft, warm beige for a professional and welcoming feel */
+  --background-color: #ffd49482; /* A soft, warm beige for a professional and welcoming feel */
   --text-color: #222222; /* Dark charcoal for smooth readability */
 }
 
