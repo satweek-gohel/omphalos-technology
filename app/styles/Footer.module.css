@@ -1,6 +1,6 @@
 
 .footer {
-    background-color: #c78f3bcc; 
+    background-color: var(--footer-color); 
     color: white; 
     position: relative; 
     padding-top: 30px;

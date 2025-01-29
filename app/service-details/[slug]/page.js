@@ -92,7 +92,7 @@ export default function ServicePage({ params }) {
 
   const ServiceLoader = () => (
     <div className="d-flex flex-column align-items-center justify-content-center vh-100">
-      <Spinner animation="border" role="status" className="mb-3" style={{width: '4rem', height: '4rem', color: '#FF6F61'}}>
+      <Spinner animation="border" role="status" className="mb-3" style={{width: '4rem', height: '4rem', color: 'var(--primary-color)'}}>
         <span className="visually-hidden">Loading...</span>
       </Spinner>
       <p className="text-center">Loading Service Details...</p>

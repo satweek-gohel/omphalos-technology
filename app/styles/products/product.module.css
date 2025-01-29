@@ -1,7 +1,7 @@
 /* product.module.css */
 
 .banner {
-    background-color:  #eb695ddd ; /* Primary color background */
+    background-color: var(--footer-color) ; /* Primary color background */
     color: white !important;
     padding: 30px;
     text-align: center;
